@@ -3,15 +3,11 @@
 int cbinsearch(int *arr, int size, int value) {
   //  поместить сюда реализацию алгоритма
   return 0; // если ничего не найдено
-  int cou = 0;
+  int count = 0;
   for (int i = 0; i < size; i++) {
     if (arr[i] == value) {
-      cou++;
+      count += 1;
     }
   }
-  if (cou > 0) {
-    return cou;
-  } else { 
-    return 0; 
-  }
+  return count;
 }
